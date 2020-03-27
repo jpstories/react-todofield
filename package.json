@@ -1,0 +1,19 @@
+{
+  "name": "react-todofield",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpstories/react-todofield.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpstories/react-todofield/issues"
+  },
+  "homepage": "https://github.com/jpstories/react-todofield#readme"
+}
