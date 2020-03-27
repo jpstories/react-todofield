@@ -6,7 +6,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <div classNameName="header__logo">
+                <div className="header__logo">
                     <img className="header__logo-img" src={logo} alt="logo" />
                     <span className="header__logo-title">TO</span>
                     <span className="header__logo-title green">DO</span>
@@ -19,6 +19,7 @@ class Header extends React.Component {
                         <li className="header__menu-elem"><a href="#">наши контакты</a></li>
                         <li className="header__menu-elem"><a href="#">блог</a></li>
                     </ul>
+                    <div className="menu__indicator"></div>
                 </nav>
             </div>
         );
