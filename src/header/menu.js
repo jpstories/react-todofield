@@ -1,5 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
-    console.log('hello')
+function getIndicator() {
     let menuLinks = document.querySelectorAll('.header__menu-elem a');
     let ind = document.querySelector('.menu__indicator');
 
@@ -14,4 +13,4 @@ window.addEventListener('DOMContentLoaded', () => {
         ind.style.width = `${el.offsetWidth}px`;
         ind.style.left = `${el.offsetLeft}px`;
     };
-});
+};

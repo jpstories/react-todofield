@@ -87,9 +87,19 @@
     height: 30px;
     text-align: center;
     line-height: 1.8;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.slider__toggle-item:hover{
+    background: rgb(226, 226, 226);
 }
 
 .active{
     background: rgb(14, 128, 194);
     color: rgb(243, 243, 243);
+}
+
+.active:hover{
+    background: rgb(17, 144, 218);
 }

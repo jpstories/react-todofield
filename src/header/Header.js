@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import logo from './header-logo.jpeg';
 
+
 class Header extends React.Component {
     render() {
         return (
@@ -19,8 +20,12 @@ class Header extends React.Component {
                         <li className="header__menu-elem"><a href="#">наши контакты</a></li>
                         <li className="header__menu-elem"><a href="#">блог</a></li>
                     </ul>
-                    <div className="menu__indicator"></div>
+                    <div className="menu__indicator">
+                        
+                    </div>
                 </nav>
+
+                
             </div>
         );
     };

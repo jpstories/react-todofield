@@ -1,11 +1,8 @@
 import React from 'react';
 import './Slider.css';
 
-import slider_icon_1 from '../article/img/article_icon1.png';
+import slider_icon_1 from '../article/img/article_icon3.png';
 import todo_img from '../wrap/wrap-todo.png';
-// import slider__icon_2 from './img/article_icon2';
-// import slider__icon_3 from './img/article_icon3';
-// import slider__icon_4 from './img/article_icon4';
 
 class Slider extends React.Component {
     render() {
@@ -51,8 +48,10 @@ class Slider extends React.Component {
                     </ul>
                 </div>
             </section>
+            
         );
     };
 };
 
 export default Slider;
+
