@@ -45,11 +45,18 @@
 .signup-form-btn {
     margin-left: 20px;
     width: 140px;
-    background: rgb(10, 216, 10);
+    background: rgb(3, 221, 3);
     border: none;
-    box-shadow: 0 0 2px 2px rgb(14, 189, 14);
     text-transform: uppercase;
     color: white;
     font-size: 1.1em;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.signup-form-btn:hover{
+    box-shadow: 0 0 1px 1px rgb(226, 238, 226);
+    background: rgb(32, 139, 50);
+    padding-left: 3px;
 }

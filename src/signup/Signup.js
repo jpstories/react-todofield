@@ -12,7 +12,7 @@ class Signup extends React.Component {
 
                 <form className="signup-form">
                     <input className="signup-form-input" placeholder="Ваш e-mail адрес" type="text" />
-                    <button className="signup-form-btn">signup</button>
+                    <button className="signup-form-btn">{this.props.textBtn}</button>
                 </form>
             </section>
         );
