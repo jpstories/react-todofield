@@ -9,8 +9,8 @@ class Header extends React.Component {
             <div className="header">
                 <div className="header__logo">
                     <img className="header__logo-img" src={logo} alt="logo" />
-                    <span className="header__logo-title">TO</span>
-                    <span className="header__logo-title green">DO</span>
+                    <span className="header__logo-title">{this.props.titleLeft}</span>
+                    <span className="header__logo-title green">{this.props.titleRight}</span>
                 </div>
 
                 <nav className="header__menu">
