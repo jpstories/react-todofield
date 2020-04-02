@@ -8,13 +8,12 @@ import Article from '../article/Article';
 import Slider from '../slider/Slider';
 import Signup from '../signup/Signup';
 import Footer from '../footer/Footer';
-//import menu.js and slider.js
 
 class App extends React.Component {
     render() {
         return (
           <div className="app">
-              <Header titleLeft="TO" titleRight="DO" />
+              <Header titleLeft="TO" titleRight="DO"/>
               <Wrap />
               <Company />
               <Article />

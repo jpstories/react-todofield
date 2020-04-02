@@ -61,9 +61,10 @@
     width: 465px;
     height: 100%;
     border-radius: 8px;
-    font-size: 1.1em;
-    padding-left: 30px;
+    font-size: 1.2em;
+    padding-left: 15px;
     box-sizing: border-box;
+    color: rgb(105, 105, 105);
 }
 
 .wrap__form-btn{

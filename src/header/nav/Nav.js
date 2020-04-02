@@ -3,17 +3,15 @@ import './Nav.css';
 
 class Nav extends React.Component {
     render() {
+        let navObject = this.props.menu;
         return (
             <nav className="header__menu">
                 <ul className="header__menu-list">
-                    <li className="header__menu-elem"><a href="#">как это работает</a></li>
-                    <li className="header__menu-elem"><a href="#">о нас</a></li>
-                    <li className="header__menu-elem"><a href="#">наши контакты</a></li>
-                    <li className="header__menu-elem"><a href="#">блог</a></li>
+                    {Object.keys(navObject).map((elem) => {
+                        return <li className="header__menu-elem"><a href={navObject[elem]}>{elem}</a></li>;
+                    })}
                 </ul>
-                <div className="menu__indicator">
-
-                </div>
+                <div className="menu__indicator"></div>
             </nav>
         );
     };

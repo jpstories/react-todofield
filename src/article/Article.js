@@ -7,6 +7,13 @@ import article_icon_2 from './img/article_icon2.png';
 import article_icon_3 from './img/article_icon3.png';
 import article_icon_4 from './img/article_icon4.png';
 
+let article__content = [
+    [article_icon_1, 'Безопасная платформа', 'Ваши задачи всегда с вами'],
+    [article_icon_2, 'Быстрый и удобный функционал', 'Все очень быстро'],
+    [article_icon_3, 'Многозадачность', 'Ставьте себе много задач'],
+    [article_icon_4, 'На любом устройстве', 'Телефон, планшет, пк']
+];
+
 class Article extends React.Component {
     render() {
         return (
@@ -18,70 +25,18 @@ class Article extends React.Component {
 
             <div className="article__wrapper">
                 <div className="article__wrap">
-
-                    <div className="article__content">
-                        <div className="article__content-title">
-                            <img className="article__content-img" src={article_icon_1} alt="" />
-                            <h2 className="article__content-h2">Безопасная платформа</h2>
-                        </div>
-
-                        <div className="article__content-desc">
-                            <p className="article__content-desc-p">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. pochemu udalila iz druzey, voluptatibus,
-                                adipisicing elit. Maxime, voluptatibus,
-                                eorem ipsum dolor sit, amet consectetur
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="article__content">
-                        <div className="article__content-title">
-                            <img className="article__content-img" src={article_icon_2} alt="" />
-                            <h2 className="article__content-h2">Быстрый и удобный функционал</h2>
-                        </div>
-
-                        <div className="article__content-desc">
-                            <p className="article__content-desc-p">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Maxime, voluptatibus,
-                                adipisicing elit. Maxime, voluptatibus,
-                                eorem ipsum dolor sit, amet consectetur
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="article__content">
-                        <div className="article__content-title">
-                            <img className="article__content-img" src={article_icon_3} alt="" />
-                            <h2 className="article__content-h2">Многозадачность</h2>
-                        </div>
-
-                        <div className="article__content-desc">
-                            <p className="article__content-desc-p">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Maxime, voluptatibus,
-                                adipisicing elit. Maxime, voluptatibus,
-                                eorem ipsum dolor sit, amet consectetur
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="article__content">
-                        <div className="article__content-title">
-                            <img className="article__content-img" src={article_icon_4} alt="" />
-                            <h2 className="article__content-h2">На любом устройстве</h2>
-                        </div>
-
-                        <div className="article__content-desc">
-                            <p className="article__content-desc-p">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Maxime, voluptatibus,
-                                adipisicing elit. Maxime, voluptatibus,
-                                eorem ipsum dolor sit, amet consectetur
-                            </p>
-                        </div>
-                    </div>
+                    {article__content.map((elem, i) => {
+                        return  <div className="article__content">
+                                    <div className="article__content-title">
+                                        <img className="article__content-img" src={elem[0]} alt="" />
+                                        <h2 className="article__content-h2">{elem[1]}</h2>
+                                    </div>
+                                    <div className="article__content-desc">
+                                        <p className="article__content-desc-p">
+                                            {elem[2]}
+                                        </p>
+                                    </div>
+                                </div>})}
                 </div>
 
                 <div className="article__wrap-img">

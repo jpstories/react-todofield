@@ -3,9 +3,14 @@ import './Header.css';
 import logo from './header-logo.jpeg';
 import Nav from './nav/Nav';
 
+let navObject = {'как это работает': '#', 
+                'о нас': '#',
+                'наши контакты': '#',
+                'блог': '#'};
 
 class Header extends React.Component {
     render() {
+
         return (
             <div className="header">
                 <div className="header__logo">
@@ -15,8 +20,7 @@ class Header extends React.Component {
                 </div>
 
                 {/* Menu */}
-                <Nav />   
-                
+                <Nav menu={navObject}/>     
             </div>
         );
     };
