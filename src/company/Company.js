@@ -1,18 +1,20 @@
 import React from 'react';
 import './Company.css';
-import comp_logo_1 from './img/evernote.png';
-import comp_logo_2 from './img/firefox.png';
-import comp_logo_3 from './img/sony.png';
-import comp_logo_4 from './img/MSFT-logo.png';
+import lg_1 from './img/evernote.png';
+import lg_2 from './img/firefox.png';
+import lg_3 from './img/sony.png';
+import lg_4 from './img/MSFT-logo.png';
+
+let company__logo = {'1':lg_1, '2':lg_2, '3':lg_3, '4':lg_4};
+
 
 class Company extends React.Component {
     render() {
         return (
             <section className="partner">
-                <div className="partner__logo"><img src={comp_logo_4} alt="microsoft" /></div>
-                <div className="partner__logo"><img src={comp_logo_2} alt="firefox" /></div>
-                <div className="partner__logo"><img src={comp_logo_3} alt="sony" /></div>
-                <div className="partner__logo"><img src={comp_logo_1} alt="evetnote" /></div>
+                {Object.keys(company__logo).map((item) => {
+                    return <div className="partner__logo"><img src={company__logo[item]} alt="microsoft" /></div>;
+                })}
             </section>
         );
     };
