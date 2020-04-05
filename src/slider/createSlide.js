@@ -61,8 +61,8 @@ const createSlide = () => {
         };
     });
 };
-
 createSlide();
+export default createSlide;
 
 
 

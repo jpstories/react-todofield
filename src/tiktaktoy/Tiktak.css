@@ -1,0 +1,18 @@
+.dice{
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgb(126, 126, 126);
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px 0;
+}
+
+.dicePeace{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(151, 151, 151);
+    box-sizing: border-box;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.7;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import Tiktak from '../tiktaktoy/Tiktak';
 import logo_blur from '../header/header-logo.jpeg';
 import social_img_1 from './img/twitter.png';
 import social_img_2 from './img/facebook.png';
@@ -24,10 +25,14 @@ class Footer extends React.Component {
                     </ul>
                 </div>
 
-                <div className="footer__social">
-                    <a href="#"><img src={social_img_1} alt="twitter" /></a>
-                    <a href="#"><img src={social_img_2} alt="facebook" /></a>
-                    <a href="#"><img src={social_img_3} alt="google" /></a>
+                <div className="footer__tiktak">
+                    <Tiktak />
+
+                    <div className="footer__social">
+                        <a href="#"><img src={social_img_1} alt="twitter" /></a>
+                        <a href="#"><img src={social_img_2} alt="facebook" /></a>
+                        <a href="#"><img src={social_img_3} alt="google" /></a>
+                    </div>
                 </div>
 
             </footer>

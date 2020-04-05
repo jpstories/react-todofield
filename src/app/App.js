@@ -8,6 +8,7 @@ import Article from '../article/Article';
 import Slider from '../slider/Slider';
 import Signup from '../signup/Signup';
 import Footer from '../footer/Footer';
+import TikTak from '../tiktaktoy/Tiktak';
 
 class App extends React.Component {
     render() {

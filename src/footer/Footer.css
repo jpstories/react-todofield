@@ -46,3 +46,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.footer__tiktak{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

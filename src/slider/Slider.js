@@ -1,5 +1,6 @@
 import React from 'react';
 import './Slider.css';
+// import './createSlide.js';
 
 import slider_icon_1 from '../article/img/article_icon3.png';
 import todo_img from '../wrap/wrap-todo.png';
