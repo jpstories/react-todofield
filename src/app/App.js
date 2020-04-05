@@ -18,7 +18,7 @@ class App extends React.Component {
               <Company />
               <Article />
               <Slider title="Подробнее"/>
-              <Signup textBtn="вход"/>
+              <Signup h1="Быстрый доступ" textBtn="вход"/>
               <Footer />
           </div>
         );
