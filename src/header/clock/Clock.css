@@ -1,0 +1,22 @@
+.header__date{
+    width: max-content;
+    height: max-content;
+    border: 1px solid rgb(235, 235, 235);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8em;
+    background: rgb(14, 134, 170);
+    color: rgb(245, 245, 245);
+    border-radius: 4px;
+    padding: 3px 6px;
+    animation: header__date 6s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes header__date {
+    50% {
+        border-radius: 15px;
+        background: rgb(2, 160, 62);
+    }
+}

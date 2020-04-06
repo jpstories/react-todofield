@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import logo from './header-logo.jpeg';
 import Nav from './nav/Nav';
+import Clock from './clock/Clock';
 
 let navObject = {'как это работает': '#', 
                 'о нас': '#',
@@ -19,8 +20,11 @@ class Header extends React.Component {
                     <span className="header__logo-title green">{this.props.titleRight}</span>
                 </div>
 
-                {/* Menu */}
-                <Nav menu={navObject}/>     
+                {/* Menu component */}
+                <Nav menu={navObject}/>
+
+                {/* Clock component */}
+                <Clock />     
             </div>
         );
     };
