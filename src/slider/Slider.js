@@ -16,9 +16,9 @@ class Slider extends React.Component {
     }
 
     li = document.querySelector('.slider__toggle-item');
-    
+
     createSlide = () => {
-        this.setState({slideTitle: "Безопасность"});
+        this.setState({ slideTitle: "Безопасность" });
     }
     render() {
         return (
@@ -57,11 +57,12 @@ class Slider extends React.Component {
                 <div className="slider__toggle">
                     <ul className="slider__toggle-list">
                         <li className="slider__toggle-item active">1</li>
-                        <li className="slider__toggle-item" onClick={this.createSlide}>2</li>
+                        <li className="slider__toggle-item">2</li>
                         <li className="slider__toggle-item">3</li>
                         <li className="slider__toggle-item">4</li>
                     </ul>
                 </div>
+
             </section>
 
         );

@@ -4,10 +4,11 @@ import logo from './header-logo.jpeg';
 import Nav from './nav/Nav';
 import Clock from './clock/Clock';
 
-let navObject = {'как это работает': '#', 
-                'о нас': '#',
-                'наши контакты': '#',
-                'блог': '#'};
+
+let navObject = {'как это работает': '/', 
+                'о нас': '/about',
+                'наши контакты': '/contact',
+                'блог': '/blog'};
 
 class Header extends React.Component {
     render() {
